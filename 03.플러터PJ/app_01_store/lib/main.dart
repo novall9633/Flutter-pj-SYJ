@@ -60,6 +60,12 @@ class StorePage extends StatelessWidget {
                     ),
                   ),
                   Spacer(), // 사이공간일정하게 띄기
+                  // 로고 이미지 추가 이미지 위젯 사용
+                  Image.asset(
+                    'logo.png',
+                    width: 70.0,
+                  ),
+                  Spacer(),
                   Text(
                     "Shoes",
                     style: TextStyle(

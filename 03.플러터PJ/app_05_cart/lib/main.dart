@@ -37,7 +37,10 @@ class CartPage extends StatelessWidget {
       // 1. 앱바
       appBar: _buildCartAppBar(),
       // 2. 본문 출력 파트 바디
-      body: Column(
+      // Column 위젯이 하단이 잘릴경우
+      // 스크롤이 생기는 ListView 위젯으로 대체한다
+      // body: Column(
+        body: ListView(
         children: [
           // 카트 페이지 상세구성 클래스 호출
           CartDetail()
